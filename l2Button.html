@@ -1,0 +1,266 @@
+<!-- class attribute let us label the html elements 
+ in this we have learned css as well as hover,transition and shadows-->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        /* css selector ie button 
+            css property ie backgroun-color
+            css value ie red */
+        .subscribe {
+            background-color: rgb(204, 0, 0);
+            color: white;
+            border: none;
+            height: 30px;
+            width: 112px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: opacity 0.15s;
+        }
+
+        .subscribe:hover{
+            opacity: 0.7;
+
+        }
+
+        .subscribe:active{
+            opacity: 0.3;
+        }
+
+        .join{
+            background-color: white;
+            color: blue;
+            border-color: blue;
+            border-radius: 2px;
+            cursor: pointer;
+            border-width: 1px;
+            height: 30px;
+            width: 50px;
+            border-style: solid;
+            margin-right: 10px;
+            transition : background-color 0.15s,
+            color 0.15s; 
+          
+
+        }
+
+        .join:hover{
+            color: white;
+            background-color: blue;
+        }
+
+        .join:active{
+            opacity: 0.5;
+        }
+
+        
+
+        .tweet{
+            background-color: rgb(0, 225, 255);
+            color: white;
+            height: 30px;
+            width: 70px;
+            border: none;
+            border-radius: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: box-shadow 0.15s;
+        }
+
+        .tweet:hover{
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+
+        }
+
+        .uber{
+            background-color: black;
+            color: white;
+            border: none;
+            height: 30px;
+            width: 100px;
+            font-weight:500;
+            cursor: pointer;
+
+        }
+
+        .uber:hover{
+            opacity: 0.8;
+        }
+
+        .amazon ,.amazonbutton1{
+            background-color: rgb(255,216,20);
+            color: black;
+            border: none;
+            height: 30px;
+            width: 150px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            
+        }
+
+        .amazon:hover{
+            background-color: rgb(236, 199, 12);
+        }
+
+        .amazonbutton1:active{
+            opacity: 0.7;
+        }
+
+        .github{
+            background-color: rgb(46,164,79);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            height: 30px;
+            width: 70px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .github:hover{
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+        }
+
+        .bootstrap1{
+            background-color: rgb(121,82,179);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .bootstrap1:hover{
+            opacity: 0.8;
+        }
+
+        .bootstrap2{
+            background-color: white;
+            color: rgb(108,117,125);
+            border-color: rgb(108,117,125);
+            border-radius: 3px;
+            border-width: 1px;
+            height: 30px;
+            width: 100px;
+            border-style: solid;
+        }
+
+        .bootstrap2:hover{
+            background-color: rgb(108,117,125);
+            color: white;
+            border-color: white;
+        }
+
+        .linkedin1{
+            background-color: rgb(10,102,194);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            height: 30px;
+            width: 200px;
+            font-weight: bold;
+        }
+
+        .linkedin1:hover{
+            background-color: rgb(8, 72, 136);
+        }
+
+        .linkedin2{
+            background-color: white;
+            color: rgb(10,102,194);
+            border-color: rgb(10,102,194);
+            border-radius: 15px;
+            height: 30px;
+            width: 60px;
+            border-style: solid;
+            border-width: 0.5px;
+            font-weight: bold;
+
+
+
+        }
+
+        .linkedin2:hover{
+            background-color: rgb(147, 187, 228);;
+            border-width : 2px;
+        }
+
+        .amazonlink{
+            color: rgb(0,113,133);
+        }
+
+        .amazonlink:hover{
+            color: red;
+        }
+        .nike{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .price{
+            color: rgb(0,118,0);
+            font-weight:bold ;
+        }
+
+        .status{
+            color: black;
+           
+            
+        }
+
+        .amazonbutton2{
+            background-color: rgb(255,164,28);
+            color: black;
+            border: none;
+            height: 30px;
+            width: 150px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition : opacity 0.15s;
+        }
+
+        .amazonbutton2:active{
+            opacity: 0.7;
+        }
+    </style>
+   
+</head>
+<body>
+
+    <button class="subscribe">SUBSCRIBE</button>
+    <button class="join">JOIN</button>
+    <button class="tweet">Tweet</button>
+    <br>
+    <br>
+
+    <!-- excercises -->
+
+    <button class="uber">Request Now</button>
+    <button class="amazon">Add to cart</button>
+    <button class="github">Sign up</button>
+    <button class="bootstrap1">Get Started</button>
+    <button class="bootstrap2">Download</button>
+
+    <button class="linkedin1">Apply on company website</button>
+    <button class="linkedin2">Save</button>
+
+    <br><br>
+    
+    <a href="https://www.amazon.com/" target="_blank" class="amazonlink"><u>Back to amazon</u></a>
+    <p class="nike">NIke black Running shoes</p>
+    <p class="price">$39 - in stock</p>
+    <p class="status">Free delivery tomorrow</p>
+    <button class="amazonbutton1">Add to cart</button>
+    <button class="amazonbutton2">Buy now</button>
+    
+</body>
+</html>
+
