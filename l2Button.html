@@ -12,12 +12,13 @@
             background-color: rgb(204, 0, 0);
             color: white;
             border: none;
-            height: 30px;
-            width: 112px;
+          
             border-radius: 2px;
             cursor: pointer;
             margin-right: 10px;
             transition: opacity 0.15s;
+            padding: 10px 15px 10px 15px;
+            vertical-align: top;
         }
 
         .subscribe:hover{
@@ -36,13 +37,17 @@
             border-radius: 2px;
             cursor: pointer;
             border-width: 1px;
-            height: 30px;
-            width: 50px;
+          
             border-style: solid;
             margin-right: 10px;
             transition : background-color 0.15s,
             color 0.15s; 
-          
+
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 15px;
+            padding-right: 15px;
+            vertical-align: top;
 
         }
 
@@ -60,14 +65,18 @@
         .tweet{
             background-color: rgb(0, 225, 255);
             color: white;
-            height: 30px;
-            width: 70px;
+       
             border: none;
-            border-radius: 15px;
+            border-radius: 20px;
             font-weight: bold;
             cursor: pointer;
             font-size: 15px;
             transition: box-shadow 0.15s;
+            vertical-align: top;
+            padding-left: 15px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+            padding-top: 10px;
         }
 
         .tweet:hover{
@@ -230,6 +239,75 @@
         .amazonbutton2:active{
             opacity: 0.7;
         }
+
+
+        .pagination{
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 4px;
+            padding-right: 4px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        .nums {
+            margin-left: 2px;
+            margin-right: 2px;
+            color: purple;
+        }
+
+        .stretch{
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: padding 0.15s;
+            margin-right: 10px;
+        }
+
+        .stretch:hover{
+            padding-bottom: 20px;
+            padding-right: 30px;
+            padding-top: 20px;
+            padding-left: 30px;
+            
+
+        }
+
+        .click3d{
+            background-color : green;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .click3d:active{
+            padding: 10px 17px;
+            box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+        }
+
+        .one,.two,.three{
+            background-color: green;
+            color: white;
+            padding:7px 7px  ;
+            border: none;
+            margin-left: 8px;
+            margin-right: 8px;
+            cursor: pointer;
+
+        }
+        .one:hover,.two:hover,.three:hover{
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
     </style>
    
 </head>
@@ -260,7 +338,27 @@
     <p class="status">Free delivery tomorrow</p>
     <button class="amazonbutton1">Add to cart</button>
     <button class="amazonbutton2">Buy now</button>
-    
+
+    <!-- excercises from 4. css box model -->
+
+    <br><br>
+    <button class="pagination">Back</button>
+    <u class="nums">1</u>
+    <u class="nums">2</u>
+    <u class="nums">3</u>
+    <u class="nums">4</u>
+    <u class="nums">5</u>
+    <button class="pagination">Next</button>
+
+    <br><br>
+
+    <button class="stretch">Stretch</button>
+    <button class="click3d">Shadow</button>
+
+    <br><br>
+    <button class="one">One</button>
+    <button class="two">Two</button>
+    <button class="three">Three</button>
 </body>
 </html>
 
