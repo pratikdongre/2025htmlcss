@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .x{
+            background-color: black;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 20px;
+            position: absolute;
+            top: -6px;
+            left: -6px;
+        }
+        .bottom-right{
+            background-color: gray;
+            width: 320px;
+            height: 180px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+
+        .time{
+            position: absolute;
+            background-color: rgba(0,0,0,0.9);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 2px;
+            bottom: 5px;
+            right: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cloth-box{
+            width: 300px;
+            position: relative;
+
+            display: inline-block;
+        }
+
+        .cloth
+        {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .off{
+            position: absolute;
+            top: 5px;
+            right: 0px;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 2px 6px;
+        }
+
+        .cart{
+            position: absolute;
+            background-color: rgba(128,128,128,0.8);
+          left: 0px;
+          right: 0px;
+            bottom: 0px;
+            height: 100px;
+            display: flex;
+  justify-content: center;
+  align-items: center;
+            
+            
+        }
+
+        .cart-button{
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+
+            padding: 4px 10px;
+
+        }
+    </style>
+</head>
+<body style="background-color: rgb(226, 0, 0);">
+
+    <div class="cloth-box">
+         <img class="cloth" src="header-images/clothimg.jpg" alt="">
+         <div class="off">
+            20% OFF
+         </div>
+
+         <div class="cart">
+            <button class="cart-button">Add to cart</button>
+         </div>
+    </div>
+    
+
+  
+
+    <div class="bottom-right">
+        <div class="x">X</div>
+        <div class="time">5:20</div>
+    </div>
+</body>
+</html>

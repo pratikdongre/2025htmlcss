@@ -1,0 +1,170 @@
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif; 
+    color: black; 
+}
+
+
+
+
+
+.thumbnail{
+ width: 100%;
+
+
+}
+
+
+
+
+/* .video-preview{
+    /* width: 300px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top; */
+ 
+
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width : 870px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr ;
+
+    }
+
+}
+
+@media (min-width : 871px) and (max-width : 1124px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media (min-width : 1201px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    .video-title{
+        font-size: 30px;
+        line-height: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    column-gap: 10px;
+ 
+}
+
+.channel-picture{
+    display: inline-block;
+    position: relative;
+  
+}
+
+.channel-img{
+    width: 50px;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.channel-information{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 75px;
+    margin-top: 10px;
+    
+    border-radius: 4px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.8);
+
+    opacity: 0;
+  
+    background-color: rgb(243, 243, 243);
+    pointer-events: none;
+    transition: opacity 0.15s;
+
+}
+
+.channel-picture:hover .channel-information{
+    opacity: 1;
+}
+
+
+.name-tip{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+font-weight: bold;
+line-height: 30px;
+margin-top: 0px;
+}
+
+.subs{
+    color: gray;
+    font-size: 15px;
+}
+
+/* .video-info{
+    display: inline-block;
+    width: 245px;
+    vertical-align: top;
+} */
+
+
+.channel-image{
+    width: 100%;
+    border-radius: 22px;
+  
+}
+
+.video-title{
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+ margin-bottom: 10px;
+}
+
+.thumbnail-row{
+    margin-bottom: 13px;
+    position: relative;
+
+}
+
+.time{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 15px;
+    padding: 4px 4px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.video-author,
+.video-stats{
+    color: #606060;
+    font-size: 12px;
+    margin-bottom: 5px;
+
+}
+
+

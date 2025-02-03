@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .header{
+            background-color:rgb(2, 137, 255);
+            height: 55px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+
+        }
+        .sidebar{
+            background-color: rgb(238, 8, 200);
+            width: 80px;
+            top: 55px;
+            left: 0px;
+            bottom: 0px;
+            position: fixed;
+        }
+
+        .x{
+            position: absolute;
+            right: 10px;
+            background-color: black;
+            color: white;
+            padding: 4px 6px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+    </style>
+
+    </head>
+    <body style="height: 1000px;
+    padding-top: 60px;
+    padding-left: 90px;">
+
+        
+        
+        <div class="header">
+            header
+
+        </div>
+
+        <div class="sidebar">
+            sidebar
+            
+            <div style="position: absolute;
+            background-color: black;
+            color: white;
+            right: 0px;
+            top: 0px;">
+                X
+            </div>
+        </div>
+
+        <div class="x">
+            X
+        </div>
+
+        <div style="background-color: lightblue;
+        width: 200px;
+        height: 200px;">
+            div1
+        </div>
+
+        <div style="background-color: lightcoral;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        position: relative;">
+            div2
+
+            <div style="position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: black;
+            color: white;">
+                5:00
+            </div>
+        </div>
+    </body>
+</html>

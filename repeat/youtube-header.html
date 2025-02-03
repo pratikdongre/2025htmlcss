@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .left{
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+
+        }
+
+
+        .ham{
+            height: 25px;
+            margin-right: 20px;
+        }
+        .logo{
+            height: 20px;
+        }
+
+        .middle{
+            margin-left: 120px;
+            flex: 1;
+            width: 0;
+            display: flex;
+            align-items: center;
+            margin-right: 80px;
+            
+        }
+
+        .search-bar{
+            height: 36px;
+            padding-left:6px ;
+            font-size: 15px;
+            padding-right: 150px;
+            border-bottom-left-radius: 5px ;
+            border-top-left-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(211, 211, 211);
+            box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15);
+        }
+
+        .right{
+            display: flex;
+            margin-right: 35px;
+            width: 180px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .upload{
+            height: 25px;
+        }
+
+        .youtube{
+            height: 25px;
+        }
+        .notification{
+            height: 25px;
+        }
+        .channel-pic{
+            height: 30px;
+        }
+
+        .search{
+            height: 25px;
+         
+        }
+
+        .voice-search{
+            height: 25px;
+            padding-top: 3px;
+        }
+
+        .search-button{
+            height: 40px;
+            margin-left: -1px;
+            border-color: rgb(211, 211, 211);
+            width: 65px;
+            border-style: solid;
+            background-color:  rgb(240, 240, 240);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .voice-search-button{
+             height: 36px;
+             width: 36px;
+             border-radius: 18px;
+
+             border: none;
+
+             margin-left: 10px;
+
+
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    <div class="left">
+        <img class="ham" src="header-images/hamburger-menu.svg" alt="">
+        <img class="logo" src="header-images/youtube-logo.svg" alt="">
+    </div>
+
+    <div class="middle">
+
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button" >
+            <img class="search" src="header-images/search.svg">
+
+        </button>
+
+        <button class="voice-search-button">
+            <img class="voice-search" src="header-images/voice-search-icon.svg" alt="">
+
+
+        </button>
+    </div>
+
+    <div class="right">
+        <img class="upload" src="header-images/upload.svg" alt="">
+        <img class="youtube" src="header-images/youtube-apps.svg" alt="">
+        <img class="notification" src="header-images/notifications.svg" alt="">
+        <img class="channel-pic" src="header-images/my-channel.jpeg" alt="">
+    </div>
+</div>
+
+
+    
+</body>
+</html>

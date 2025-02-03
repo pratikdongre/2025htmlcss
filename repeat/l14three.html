@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <style>
+
+            .header{
+                display: flex;
+                position: fixed;
+                flex-direction: row;
+                height: 50px;
+                align-items: center;
+                top: 0px;
+                left: 0;
+                right: 0;
+                background-color: blue;
+            }
+            .cat{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-left: 80px;
+                margin-right: 20px;
+                
+                
+            }
+
+            .name{
+                flex: 1;
+                width: 0;
+                font-weight: bold;
+
+            }
+
+
+
+            .add{
+                
+                margin-right: 20px;
+
+                padding: 5px 10px;
+                background-color: rgb(0, 132, 255);
+                color: white;
+                border: none;
+                border-radius: 2px;
+
+                font-weight: 500;
+
+                             
+            }
+
+            .mes{
+
+                padding: 5px 10px;
+                background-color: rgb(223, 219, 219);
+                color: black;
+                border: none;
+                border-radius: 2px;
+
+                font-weight: 500;
+
+                
+            }
+
+
+            .sidebar{
+                position: fixed;
+                width: 55px;
+                background-color: rgb(49, 49, 49);
+                top: 50px;
+                left: 0px;
+                bottom: 0px;
+                
+                
+
+            }
+
+            .discord{
+                position: fixed;
+                width: 200px;
+                background-color: rgb(34, 33, 33);
+                top: 50px;
+                left: 55px;
+                bottom: 0px;
+                padding-left: 10px;
+                color: white;
+                
+                
+            }
+
+            .cat-sidebar{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+               margin-top: 10px;
+               margin-left: 5px;
+                
+                
+            }
+
+            .hashes{
+                margin-bottom: 5px;
+                color: gray;
+
+            }
+        </style>
+    </head>
+
+    <body style="height: 1000px;
+    ">
+
+        <div class="header">
+
+            <div>
+                <img class="cat" src="cat.jpg" alt="">
+            </div>
+
+            <div class="name">
+                Oliver cat
+            </div>
+
+            <div style="width: 200px;
+            margin-right: 50px;
+            flex-shrink: 0;">
+
+            <button class="add">
+                Add friend
+            </button>
+
+            <button class="mes">
+                Message
+            </button>
+        </div>
+
+        </div>
+
+
+        <div class="sidebar">
+            <div>
+                <img class="cat-sidebar" src="cat.jpg" alt="">
+                <img class="cat-sidebar" src="cat.jpg" alt="">
+                <img class="cat-sidebar" src="cat.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div>
+
+            <div class="discord">
+                <div  style="display: flex; justify-content: space-between;
+                align-items: center;
+                
+                ">
+                <p style="font-weight: bold;" >INFO</p>    
+
+                <p style="margin-right: 20px;
+                font-size: 25px;">+</p>
+                </div>
+
+                <div class="hashes"># new-videos</div>
+                <div class="hashes"># updates</div>
+
+                <div class="hashes"># faq</div>
+
+
+
+
+            </div>
+
+        </div>
+        
+
+    </body>
+</html>

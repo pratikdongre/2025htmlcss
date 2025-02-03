@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+     .container{
+          width: 300px;
+          height: 100px;
+          border-color: gray;
+          border-style: solid ;
+          border-width: 1px;
+          margin-top: 20px;
+     }
+    
+     .flexbox{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+
+
+     }
+
+     .notifications{
+          background-color: rgb(0, 68, 255);
+          color:white;
+          border-radius: 25px;
+          padding: 2px 6px;
+          font-size: 10px;
+          border: none;
+          font-weight: bold;
+     }
+
+     .g-flexbox{
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+          align-items: center;
+          width: 300px;
+
+     }
+
+     .g-cat{
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          margin-right: 10px;
+     }
+     
+   
+     .g-text1{
+          margin-bottom: 0px;
+          margin-top: 0px;
+          font-weight: bold;
+     }
+
+      
+     
+     .g-text2{
+          margin-bottom: 0px;
+          margin-top: 0px;
+          color: gray;
+     }
+
+     .follow-g{
+          background-color: blueviolet;
+          color: white;
+          border-radius: 2px;
+          border: none;
+          padding: 5px 10px;
+     }
+
+     .header{
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+
+          background-color: blueviolet;
+          height: 60px;
+          justify-content: space-between;
+          align-items: center;
+
+     }
+
+     .left{
+          width: 80px;
+          color: white;
+          margin-left: 10px;
+          font-weight: 500;
+     }
+/* 
+     .middle{
+          flex: 1;
+          margin-left: 50px;
+          margin-right: 50px;
+          max-width: 500px;
+     } */
+
+     .search-bar{
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 10px;
+          border-radius: 250px;
+          border: none;
+          width: 500px;
+
+          
+     }
+     .right{
+          
+          border-color: white;
+          border-style: solid;
+          border-width: 1px;
+          margin-right: 20px;
+          color: white;
+          padding: 4px 12px;
+          
+
+     }
+      
+    </style>
+</head>
+<body style="padding-bottom: 1000px;">
+    <div style="display: flex;
+    flex-direction: row;
+    margin-bottom: 10px ;">
+         <div style="background-color: lightblue;">div 1 extra text </div>
+         <div style="background-color: lightcoral;">div 2 <p>text</p></div>
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;">
+         <div style="background-color: lightblue; width: 100px;">100px </div>
+         <div style="background-color: lightcoral; flex: 1;">flex1</div>
+         <div style="background-color: lightblue; flex: 2;">flex2</div>
+
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    height: 70px;
+    justify-content: center;">
+         <div style="background-color: lightblue; width: 100px;">100px </div>
+         <div style="background-color: lightcoral; width: 100px;">100</div>
+         <div style="background-color: lightblue; width: 100px;">100</div>
+
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    height: 70px;
+    justify-content: space-between;">
+         <div style="background-color: lightblue; width: 100px;">100px </div>
+         <div style="background-color: lightcoral; width: 100px;">100</div>
+         <div style="background-color: lightblue; width: 100px;">100</div>
+
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    ">
+         <div style="background-color: lightblue; width: 100px;">100px </div>
+         <div style="background-color: lightcoral; width: 100px;">100</div>
+         <div style="background-color: lightblue; width: 100px;">100</div>
+
+    </div>
+
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 20px;">
+          <div style="background-color: lightblue; width: 200px;">200px</div>
+          <div style="background-color: lightcoral; width: 75px;">75px</div>
+
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 20px;">
+          <div style="background-color: lightblue; width: 50px;">item 1</div>
+          <div style="background-color: lightcoral;flex: 1;">item 2</div>
+          <div style="background-color: lightblue; width: 75px;">item 3</div>
+
+
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    ">
+          <div style="background-color: lightblue; ">item 1</div>
+          <div style="background-color: lightcoral;">item 2</div>
+          <div style="background-color: lightblue; ">item 3</div>
+          <div style="background-color: lightcoral;">item 4</div>
+
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    height: 50px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    align-items: center;
+  
+    ">
+          <div style="background-color: lightblue; ">item 1</div>
+          <div style="background-color: lightcoral;">item 2</div>
+       
+
+    </div>
+
+
+
+
+    <div class="container">
+
+     <div class="flexbox">
+          <div>
+               Home
+          </div>   
+           <button class="notifications"> 14</button>
+     </div>
+
+
+     <div class="flexbox">
+          <div>
+               Notifications
+          </div>
+        
+          <button class="notifications">3</button>
+     </div>
+
+
+     <div class="flexbox">
+          <div>
+               Messages
+          </div>
+
+          <button class="notifications">5</button>
+     </div>
+
+    </div>
+
+
+
+    <div class="g-flexbox">
+
+     <div style="width: 40px;">
+          <img class="g-cat" src="cat.jpg" alt="">
+
+     </div>
+
+
+     <div style="flex: 1; margin-left: 10px;">
+          <p class="g-text1" >Oliver</p>
+          <p class="g-text2">the cat</p>
+          <p class="g-text2">Popular</p>
+     </div>
+
+     <div style="width: 60px;">
+          <button class="follow-g">Follow</button>
+
+     </div>
+
+
+    </div>
+
+  
+    <div class="g-flexbox">
+
+     <div style="width: 40px;">
+          <img class="g-cat" src="cat.jpg" alt="">
+
+     </div>
+
+
+     <div style="flex: 1; margin-left: 10px;">
+          <p class="g-text1" >Oliver</p>
+          <p class="g-text2">the cat</p>
+          <p class="g-text2">Popular</p>
+     </div>
+
+     <div style="width: 60px;">
+          <button class="follow-g">Follow</button>
+
+     </div>
+
+
+    </div>
+
+    <div class="g-flexbox">
+
+     <div style="width: 40px;">
+          <img class="g-cat" src="cat.jpg" alt="">
+
+     </div>
+
+
+     <div style="flex: 1; margin-left: 10px;">
+          <p class="g-text1" >Oliver</p>
+          <p class="g-text2">the cat</p>
+          <p class="g-text2">Popular</p>
+     </div>
+
+     <div style="width: 60px;">
+          <button class="follow-g">Follow</button>
+
+     </div>
+
+
+    </div>
+
+
+    <div class="header ">
+     <div class="left">Home</div>
+
+          <input class="search-bar" type="search" placeholder="Search">
+     
+     <div class="right">Download</div>
+    </div>
+
+
+    <div style="display: flex;
+    flex-direction: row;">
+     <div style="background-color: lightblue; width: 200px;">1</div>
+     <div style="background-color: lightcoral; width: 800px;">2</div>
+     <div style="background-color: lightblue; width: 500px;">3</div>
+    </div>
+
+    
+</body>
+</html>
