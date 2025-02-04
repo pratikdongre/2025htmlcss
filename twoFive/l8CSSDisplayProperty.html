@@ -1,0 +1,155 @@
+<!-- CSS display property three types
+    1. block element :- takes up the entire line as margin ie p regardless of width
+     2. inline block element :- only takes space as much as needed ie img , input
+     3. inline element :- appear within a line of text ie span or strong or u 
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .name {
+                display: block;
+            }
+            .email {
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .longText{
+                display: inline-block;
+                width: 200px;
+                vertical-align: middle;
+            }
+
+            .buttonYes,
+            .buttonNo{
+                margin-left: 4px;
+                vertical-align: middle;
+
+            }
+
+            .googleImage{
+                display: block;
+                background-color: red;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .searchBar{
+                
+                display: block;
+                margin : auto;
+                margin-top: 14px;
+                padding-left: 8px;
+                padding-right: 90px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                border-radius: 36px;
+                border-style: solid;
+                border-width: 1px;
+            }
+
+            .FirstName,.LastName{
+                width: 100px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 5px;
+            }
+            .Email{
+                display: block;
+                margin-top: 8px;
+                width: 214px;
+                margin-bottom: 8px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 5px;
+            }
+
+            .Signup{
+
+                width: 226px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                border-radius: 6px;
+                border: none;
+                background-color: rgb(10, 160, 247);
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .Request{
+                font-size: 30px;
+                font-weight: 500;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 5px;
+            }
+
+            .Pickup,.Destination{
+                width: 260px;
+                padding-left: 6px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                display: block;
+                margin-bottom: 6px;
+                background-color: rgb(206, 206, 206);
+                border: none;
+
+            }
+
+            .ReqButton,.LaterButton{
+                margin-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-right: 10px;
+                border: none;
+
+            }
+            .ReqButton{
+                background-color: black;
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <input class="name" type="text" placeholder="Name">
+        <input class="email" type = "text" placeholder="Email">
+
+        <p class="longText">Thanks for chatting with our customer support. 
+            Would you like to take our quick survery</p>
+
+        <button class="buttonYes">Yes</button>
+        <button class="buttonNo">No</button>
+
+        <br>
+        <br>
+
+        <img class="googleImage" src="youtube/Images/google.png" alt="google">
+        <input  class="searchBar" type="text" placeholder="Search Google or type a URL">
+
+        <br><br>
+
+        <input class="FirstName" type="text" placeholder="First name">
+        <input class="LastName" type="text" placeholder="Last name">
+        <input class="Email" type="text" placeholder="Email">
+        <button class="Signup">Sign up</button>
+
+        <p class="Request">Request a ride now</p>
+        <input class="Pickup" type="text" placeholder="Enter pickup location">
+        <input  class="Destination" type="text" placeholder="Enter destination">
+
+        <button class="ReqButton">Request Now</button>
+        <button class="LaterButton">Schedule for later</button>
+        
+
+    </body>
+</html>
