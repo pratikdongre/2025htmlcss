@@ -1,0 +1,88 @@
+<!-- div is a division or more exact a box/ containers 
+ which can contain other element inside it 
+ it is default as a block but can be changed -->
+
+
+ <!DOCTYPE html>
+ <html>
+    <head>
+        
+        <style>
+            .red{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                display: inline-block;
+            }
+
+            .green{
+                width: 50px;
+                height: 50px;
+                background-color: green;
+                border-radius: 25px;
+                display: inline-block;
+                margin-left: 10px;
+            }
+
+            .divbox{
+                border-style: solid;
+                display: block;
+                width: 300px;
+                margin-top: 20px;
+                border-width: 1px;
+                margin-bottom: 20px;
+            }
+
+            .para{
+                padding-left: 10px;
+
+            }
+            .butts{
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .blackbox{
+                border-style: solid;
+                border-width: 1px;
+                display: inline-block;
+                width: 350px;
+                background-color: rgb(94, 94, 94);
+                color: white;
+
+            }
+
+            .paraBlackBox{
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .paraBlackBox2{
+                padding-left: 10px;
+                font-weight: 500;
+                font-size: 15px;
+                padding-right: 10px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="red"></div>
+        <div class="green"></div>
+
+        <div class="divbox">
+            <p class="para">Satisfied with our Service?</p>
+            <button class="butts">Yes</button>
+            <button class="butts">No</button>
+        </div>
+
+        <div class="blackbox">
+            <p class="paraBlackBox">Install Youtube Music</p>
+            <p class="paraBlackBox2">Add YouTube Music to your desktop for quick and easy access</p>
+
+        </div>
+    </body>
+ </html>
