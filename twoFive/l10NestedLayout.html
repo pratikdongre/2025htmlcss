@@ -3,3 +3,130 @@
  items are top of each other
  2 horizontal layout 
  items are beside each other  -->
+
+
+ <!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0px;
+            }
+            
+            .image-row{
+                width: 120px;
+                
+            }
+
+            .catImage{
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                object-position: middle;
+            }
+
+            .smallImage{
+                width: 28px;
+                height: 28px;
+                border-radius: 14px;
+                vertical-align: middle;
+                margin-left: 4px;
+            }
+          
+            .mutual{
+                vertical-align: middle;
+                width: 80px;
+                font-size: 11px;
+            }
+
+            .name{
+                margin-top: 2px;
+                margin-bottom: 4px;
+                font-size: 14px;
+                font-weight: 700;
+                margin-left: 4px;
+                
+            }
+
+            .two{
+                margin-bottom: 8px;
+            }
+
+            .addFriend{
+                background-color: rgb(0, 153, 255);
+                color: white;
+                border: none;
+                border-radius: 2px;
+                padding-left: 6px;
+                padding-right: 6px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                font-size: 12px;
+                margin-left: 4px;
+
+            }
+        </style>
+
+    </head>
+    <body>
+
+        
+
+            <div style="display: inline-block;">
+                <div class="image-row">
+                    <img class="catImage" src="cat.jpg" alt="">
+                </div>
+    
+                <div style="width: 120px;"  >
+                    <div>
+                        <p class="name" >Oliver</p>
+                    </div>
+    
+                    <div class="two">
+                        <div style="display: inline-block;">
+                            <img class="smallImage" src="cat.jpg" alt="">
+                        </div>
+                        <div style="display: inline-block;">
+                            <p class="mutual" >2 mutual friends</p>
+                        </div>
+                    </div>
+    
+                    <div class="button" >
+                        <button class="addFriend">Add Friend</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div style="display: inline-block; margin-left: 10px;" >
+                <div class="image-row">
+                    <img class="catImage" src="cat.jpg" alt="">
+                </div>
+    
+                <div style="width: 120px;"  >
+                    <div>
+                        <p class="name" >Oliver</p>
+                    </div>
+    
+                    <div class="two">
+                        <div style="display: inline-block;">
+                            <img class="smallImage" src="cat.jpg" alt="">
+                        </div>
+                        <div style="display: inline-block;">
+                            <p class="mutual" >2 mutual friends</p>
+                        </div>
+                    </div>
+    
+                    <div class="button" >
+                        <button class="addFriend">Add Friend</button>
+                    </div>
+                </div>
+                
+            </div>
+        
+        
+        
+    </body>
+</html>
