@@ -11,4 +11,46 @@
  the other problem is it is not vertically aligned 
 
  we will use css grid that let us have perfeclty aligned horizontal layout 
+
+ so grid is a layout of row and column ie 2*3 2 rows and 3 columns 
+ or 1*2 1 row and 2 columns 
  -->
+
+
+ <DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div style="display: grid;
+                    grid-template-columns: 100px 100px ;">
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightpink;">div 2 <p>text</p></div>
+
+        </div>
+
+<div style="display: grid;
+margin-top: 10px;
+        grid-template-columns: 100px 100px 200px ;">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">100px<p>text</p></div>
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightcoral;">100px</div>
+
+</div>
+
+<div style="display: grid;
+margin-top: 10px;
+        grid-template-columns: 100px 1fr ;">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">100px</div>
+  
+
+</div>
+  
+    </body>
+</html>
+
+
+
