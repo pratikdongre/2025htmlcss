@@ -1,0 +1,287 @@
+<!-- grid has rigid layout 
+ flex is flexible  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            .Search{
+                padding-left: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 400px;
+                border: none;
+                border-radius: 16px;
+                font-size: 15px;
+            }
+
+           
+            .button-follow{
+                background-color: rgb(0, 127, 212);
+                color: white;
+                border: none;
+                padding: 6px 15px;
+                border-radius: 6px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+            }
+            p{
+                margin: 0;
+               
+            }
+            div{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        </style>
+        <title>Flexbox</title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="display: flex; flex-direction: row;">
+            <div style="background-color: aliceblue;">div1 extra text</div>
+            <div style="background-color: pink;">div2 <p>para</p></div>
+        </div>
+
+        <div style="display: flex; margin-top: 20px;">
+            <div style="background-color: lightblue; width: 100px;">100px</div>
+            <div style="background-color: lightcoral;
+            flex: 1;"> flex : 1
+            </div>
+        </div>
+
+        <div style="display: flex; margin-top: 20px;">
+            <div style="background-color: lightblue; width: 100px;">100px</div>
+            <div style="background-color: lightcoral;
+            flex: 1;"> flex : 1
+            </div>
+            <div style="background-color: lightblue; flex: 2;">flex : 2</div>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; flex-direction: row;">
+            <div style="flex: 1; background-color: lightblue;">flex : 1</div>
+            <div style="width: 100px; background-color: lightcoral;">100px</div>
+            <div style="flex: 2; background-color: lightblue;">flex : 2</div>
+        </div>
+
+
+        <div style="display: flex; margin-top: 20px; flex-direction: row;
+                    height: 70px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                    justify-content: center;">
+            <div style="width: 100px; background-color: lightblue;">100px</div>
+            <div style="width: 100px; background-color: lightcoral;">100px</div>
+            <div style="width: 100px; background-color: lightblue;">100px</div>
+        </div>
+
+
+        <div style="display: flex; margin-top: 20px; flex-direction: row;
+                    height: 70px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: gray;
+                    justify-content: space-between;">
+            <div style="width: 100px; background-color: lightblue;">100px</div>
+            <div style="width: 100px; background-color: lightcoral;">100px</div>
+            <div style="width: 100px; background-color: lightblue;">100px</div>
+        </div>
+        
+        <div style="display: flex; margin-top: 20px; flex-direction: row;
+        height: 70px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+        align-items: center;
+        justify-content: space-between;">
+        <div style="width: 100px; background-color: lightblue;">100px</div>
+        <div style="width: 100px; background-color: lightcoral;">100px</div>
+        <div style="width: 100px; background-color: lightblue;">100px</div>
+</div>
+
+<div style="display: flex;flex-direction:  row; margin-top: 20px;">
+    <div style="background-color: lightblue; width: 200px;">200px</div>
+    <div style="background-color: lightcoral; width: 75px;">75px</div>
+
+</div>
+
+
+<div style="display: flex; margin-top: 20px;flex-direction: row;">
+    <div style="background-color: lightblue; width: 50px;">item1</div>
+    <div style="background-color: lightcoral; flex: 1;">item2</div>
+    <div style="background-color: lightblue; width: 75px;">item3</div>
+</div>
+
+<div style="display: flex; margin-top: 20px; flex-direction: row;
+justify-content: space-between;">
+    <div style="background-color: lightcoral;">item1</div>
+    <div style="background-color: lightcoral;">item2</div>
+    <div style="background-color: lightcoral;">item3</div>
+    <div style="background-color: lightcoral;">item4</div>
+</div>
+
+<div style="display: flex; flex-direction: row; margin-top: 20px;
+height: 50px; border-width: 1px ; border-style: solid;  justify-content: space-between;
+align-items: center;
+border-color: gray;">
+    <div style="background-color: lightblue; ">item1</div>
+    <div style="background-color: lightcoral;">item2</div>
+</div>
+
+
+<div style="margin-top: 20px; border-style: solid; border-width: 0.5px; border-color: gray;
+ border-radius: 5px; width: 200px;">
+
+    <div style="display: flex; flex-direction: row; justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;">
+        <div style="font-size: 15px; padding-left: 8px;padding-top: 4px;">Home</div>
+        <button style="background-color: rgb(0, 162, 236); color: white;
+        border-radius: 8px; border: none;
+        margin-top: 4px;
+        margin-right: 4px;">14</button>
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: space-between;
+    align-items: center;margin-bottom: 5px;">
+        <div style="font-size: 15px; padding-left: 8px;padding-top: 4px;">Notifications</div>
+        <button style="background-color: rgb(0, 162, 236); color: white;
+        border-radius: 8px; border: none;
+        margin-top: 4px;
+        margin-right: 4px;">3</button>
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: space-between;
+    align-items: center;margin-bottom: 10px">
+        <div style="font-size: 15px; padding-left: 8px;padding-top: 4px;">Messages</div>
+        <button style="background-color: rgb(0, 162, 236); color: white;
+        border-radius: 8px; border: none;
+        margin-top: 4px;
+        margin-right: 4px;">5</button>
+    </div>
+</div>
+
+<div style="margin-top: 20px;
+border-style: solid;
+border-width: 0.1px;
+border-color: gray;width: 200px; ">
+
+<div style="display: flex; flex-direction: row;  height: 50px; padding-left: 4px;
+padding-top: 4px; padding-bottom: 4px; align-items: center;">
+    <img style="width: 50px; object-fit: cover; object-position: center; 
+    " src="cat.jpg" alt="">
+    <div>
+        <div style="font-size: 13px;">Oliver</div>
+        <div style="font-size: 13px;">The cat</div>
+        <p style="font-size: 13px;">Popular</p>
+    </div>
+    <button>Follow</button>
+</div>
+
+</div>
+
+
+<div style="margin-top: 20px;display: flex; flex-direction: row; 
+    align-items: center; width: 300px; ">
+
+    <div style="width: 50px; margin-right: 10px;">
+     
+            <img style="width: 50px; height:50px ; border-radius: 25px; object-fit: cover;
+            object-position: middle;
+            " src="cat.jpg" alt="">
+            
+        </div>
+        
+        <div style="flex: 1;"> <p>Oliver</p>
+            <p style=" font-size: 13px; color: gray;
+                font-weight: 500;">the cat</p>
+           <p style=" font-size: 13px; color: gray;
+                font-weight: 500;">Popular</p>
+      </div>
+       <div style="width: 60px;">
+        <button class="button-follow">Follow</button>
+
+
+       </div>
+
+
+</div>
+
+<div style="margin-top: 20px;display: flex; flex-direction: row; 
+    align-items: center; width: 300px; ">
+
+    <div style="width: 50px; margin-right: 10px;">
+     
+            <img style="width: 50px; height:50px ; border-radius: 25px; object-fit: cover;
+            object-position: middle;
+            " src="cat.jpg" alt="">
+            
+        </div>
+        
+        <div style="flex: 1;"> <p>Oliver</p>
+            <p style=" font-size: 13px; color: gray;
+                font-weight: 500;">the cat</p>
+           <p style=" font-size: 13px; color: gray;
+                font-weight: 500;">Popular</p>
+      </div>
+       <div style="width: 60px;">
+        <button class="button-follow">Follow</button>
+
+
+       </div>
+
+
+</div>
+
+<div style="margin-top: 20px;display: flex; flex-direction: row; 
+    align-items: center; width: 300px; ">
+
+    <div style="width: 50px; margin-right: 10px;">
+     
+            <img style="width: 50px; height:50px ; border-radius: 25px; object-fit: cover;
+            object-position: middle;
+            " src="cat.jpg" alt="">
+            
+        </div>
+        
+        <div style="flex: 1;"> <p>Oliver</p>
+            <p style=" font-size: 13px; color: gray;
+                font-weight: 500;">the cat</p>
+           <p style=" font-size: 13px; color: gray;
+                font-weight: 500;">Popular</p>
+      </div>
+       <div style="width: 60px;">
+        <button class="button-follow">Follow</button>
+
+
+       </div>
+
+
+</div>
+
+<div style="margin-top: 10px; display: flex; flex-direction: row;
+background-color: rgb(235, 15, 235); align-items: center; justify-content: space-between;
+height: 50px;">
+
+    <div style="width: 40px; color: white; padding-left: 20px; ">
+        Home
+    </div>
+    <div style="flex: 1; margin-left: 250px;">
+        <input class="Search" type="text" placeholder="Search">
+    </div>
+    <div style="width: auto; padding-right: 40px;">
+        <button>Download</button>
+    </div>
+
+</div>
+
+    <div style="margin-top: 20px;">
+        <button style="padding-left: 10px; padding-right: 10px; 
+        padding-top: 4px;"><img style="width: 20px;" src="youtube/header-images/search.svg" alt=""></button>
+        
+    </div>
+
+    </body>
+</html>

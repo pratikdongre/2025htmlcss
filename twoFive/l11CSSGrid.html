@@ -22,7 +22,7 @@
     <head>
 
     </head>
-    <body>
+    <body style="padding-bottom: 1000px;">
         <div style="display: grid;
                     grid-template-columns: 100px 100px ;">
             <div style="background-color: lightblue;">div 1</div>
@@ -41,12 +41,68 @@ margin-top: 10px;
 </div>
 
 <div style="display: grid;
-margin-top: 10px;
+            margin-top: 10px;
         grid-template-columns: 100px 1fr ;">
         <div style="background-color: lightblue;">100px</div>
-        <div style="background-color: lightpink;">100px</div>
+        <div style="background-color: lightpink;">1r</div>
   
 
+</div>
+
+<div style="display: grid;
+margin-top: 20px;
+grid-template-columns: 100px 1fr 1fr ;">
+        <div style="background-color: aqua;">100px</div>
+        <div style="background-color: lightcoral;">1fr</div>
+        <div style="background-color: aqua;">1fr</div>
+        
+</div>
+
+<div style="display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            margin-top: 20px;
+            column-gap: 20px;
+            row-gap: 40px;
+            ">
+        <div style="background-color: aqua; height: 200px;">video1</div>
+        <div style="background-color: pink; height: 200px;">video2</div>
+        <div style="background-color: aqua;  height: 200px;">video3</div>
+        <div style="background-color: pink; height: 200px;">video4</div>
+        <div style="background-color: aqua;  height: 200px;">video5</div>
+        <div style="background-color: pink; height: 200px;">video6</div>
+
+</div>
+
+<div style="display: grid;
+            grid-template-columns: 200px 75px ;
+            margin-top: 10px;">
+        <div style="background-color: aquamarine;">200px</div>
+        <div style="background-color: palevioletred;">75px</div>
+</div>
+
+<div style="display: grid;
+            grid-template-columns: 50px 1fr  75px ;
+            margin-top: 10px;">
+        <div style="background-color: aquamarine;">50px</div>
+        <div style="background-color: palevioletred;">1fr</div>
+        <div style="background-color: aquamarine;">75px</div>
+
+</div> 
+
+
+<div style="display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+column-gap: 20px;
+row-gap: 10px;
+margin-top: 10px;">
+        <div style="background-color: aliceblue;">col1</div>
+        <div style="background-color: blue;">col2</div>
+        <div style="background-color: red;">col3</div>
+        <div style="background-color: pink;">col4</div>
+        <div style="background-color: aliceblue;">col1</div>
+        <div style="background-color: blue;">col2</div>
+        <div style="background-color: red;">col3</div>
+        <div style="background-color: pink;">col4</div>
 </div>
   
     </body>

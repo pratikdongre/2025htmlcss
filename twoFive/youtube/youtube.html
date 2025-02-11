@@ -3,97 +3,51 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/general.css">
+
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
         <title>Youtube</title>
         <style>
-            p{
-                font-family: Roboto,Arial;
-                margin-top: 0px;
-                margin-bottom: 0px;
-            }
-            .thumbnail{
-                width: 300px;
-                display: block;
-               
-
-               
-                
-                
-                border-width: 2px;
-                
-            }
-
-            .search-bar{
-                font-size: 15px;
-                margin-top: 10px;
-                display: block;
-            }
-
-            .video-title{
-                margin-top: 0px;
-                font-weight: 500;    
-                font-weight: 14px;
-                line-height: 20px;    
-                margin-bottom: 8px;        
-            }
-
-
-            .video-preview{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
-
-            }
            
-            .channel-picture{
-                display: inline-block;
-              width: 50px;
-              vertical-align: top;
-
-
-                
-            }
-
-            .video-info{
-                
-                display: inline-block;
-                width: 200px;
-                margin-top: 0;
-                vertical-align: top;
-                
-            }
-
-            .channel-image{
-                width: 40px;
-                border-radius: 25px;
-
-            }
-
-            .thumbnail-row{
-                margin-bottom: 10px;
-            }
-
-            .video-author,
-            .video-stats{
-                color: gray;
-                font-size: 12px;
-                
-            }
-
-            .video-author{
-                margin-bottom: 4px;
-            }
+        
+         
             
         </style>
 
     </head>
     <body>
-        <input class="search-bar" type="text" placeholder="Search">
+        <div class="header">
+            <div class="leftside"> 
+                <img style="width: 24px; margin-left: 20px; margin-right: 25px; height: 25px;" src="header-images/hamburger-menu.svg" alt="">
+                <img style="width: 90px;" src="header-images/youtube-logo.svg" alt="">
 
-    
+            </div>
+
+            <div class="middle">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="searchlogoButton" ><img class="searchlogo" src="header-images/search.svg" alt=""></button>
+                <button class="searchvoiceButton" ><img class="searchvoice" src="header-images/voice-search-icon.svg" alt=""></button>
+
+
+            </div>
+
+
+            <div class="rightside">
+                <div class="imagediv"><img class="images" src="header-images/notifications.svg" alt=""></div>
+                <div class="imagediv"><img class="images" src="header-images/upload.svg" alt=""></div>
+                <div class="imagediv"><img  class="images" src="header-images/youtube-apps.svg" alt=""></div>
+                <div class="imagedivChannel"><img class="imagesChannel" src="header-images/my-channel.jpeg" alt=""></div>
+
+            </div>
+        </div>
+
+    <div class="gridofAll">
+
 
         <div class="video-preview">
 
@@ -103,7 +57,7 @@
 
             </div>
 
-            <div>
+            <div class="gridOFbelow">
                 <div class="channel-picture">
                     <img class="channel-image" src="channels/channel-1.jpeg" alt="">
                 </div>
@@ -132,7 +86,7 @@
 
             </div>
 
-            <div>
+            <div class="gridOFbelow">
 
                 <div class="channel-picture">
                     <img class="channel-image" src="channels/channel-2.jpeg" alt="">
@@ -151,6 +105,92 @@
             </div>
 
         </div>
+        
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+
+
+            </div>
+
+            <div class="gridOFbelow">
+
+                <div class="channel-picture">
+                    <img class="channel-image" src="channels/channel-2.jpeg" alt="">
+                </div>
+
+
+                <div class="video-info" >
+
+                    <p class="video-title">Try not to laugh Challenge #9</p>
+    
+                    <p class="video-author">Markiplier</p>
+            
+                    <p class="video-stats">19M views . 4 years ago</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+
+
+            </div>
+
+            <div class="gridOFbelow">
+
+                <div class="channel-picture">
+                    <img class="channel-image" src="channels/channel-2.jpeg" alt="">
+                </div>
+
+
+                <div class="video-info" >
+
+                    <p class="video-title">Try not to laugh Challenge #9</p>
+    
+                    <p class="video-author">Markiplier</p>
+            
+                    <p class="video-stats">19M views . 4 years ago</p>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+
+
+            </div>
+
+            <div class="gridOFbelow">
+
+                <div class="channel-picture">
+                    <img class="channel-image" src="channels/channel-2.jpeg" alt="">
+                </div>
+
+
+                <div class="video-info" >
+
+                    <p class="video-title">Try not to laugh Challenge #9</p>
+    
+                    <p class="video-author">Markiplier</p>
+            
+                    <p class="video-stats">19M views . 4 years ago</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
     
 
 
