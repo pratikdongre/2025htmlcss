@@ -4,6 +4,11 @@
     height: 50px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
     
 }
 
