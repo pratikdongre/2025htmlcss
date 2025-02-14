@@ -7,4 +7,7 @@ p{
 body{
     margin: 0;
     padding-top: 80px;
+    padding-bottom: 3000px;
+    padding-left: 95px;
+    background-color: rgb(247, 247, 247);
 }
