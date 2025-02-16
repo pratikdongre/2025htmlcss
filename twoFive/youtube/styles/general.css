@@ -6,8 +6,17 @@ p{
 
 body{
     margin: 0;
+    
     padding-top: 80px;
     padding-bottom: 3000px;
-    padding-left: 95px;
-    background-color: rgb(247, 247, 247);
+    padding-left: 90px;
+    padding-right: 20px;
+    
+    
+    background-color: rgb(151, 0, 0);
+}
+@media (min-width : 871px){
+    body{
+        padding-left: 90px;
+    }
 }

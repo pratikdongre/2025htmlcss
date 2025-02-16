@@ -1,0 +1,64 @@
+<!-- absolute and relative 
+ use index to make change the default behavior of which element appers top 
+ default behaviour the one that added before
+ the  lesser the z-index the frontier the element
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body style="height: 1000px; padding-top: 90px; padding-left: 100px;">
+        <div style="background-color: black; position: fixed; top: 0px; left: 0px;
+        right: 0px; height: 90px; color: white; z-index: 1;">
+            Header
+        </div>
+        <div style="background-color: rgb(59, 6, 6); position: fixed;
+        top: 100px;left: 0px; bottom: 0px; width: 100px;">
+            Sidebar
+
+            <div style="background-color: red; position: absolute; right: 0px; top: 0px;">
+                X
+            </div>
+
+        </div>
+
+
+        <div style=
+        "background-color: lightblue; 
+        height: 200px; 
+        width: 200px;
+        position: static; ">
+        div1
+        </div>
+
+
+        <div style="background-color: lightcoral;
+         height: 200px;
+         width: 200px;
+         position: relative;">
+         div2
+
+             <div style="background-color: black; color: white;
+             position: absolute; bottom: 5px; right: 5px;">
+                5:00
+            </div>
+        </div>
+
+        <div style="position: fixed; top: 90px; background-color: green; bottom: 0px;
+         right: 0px; width: 100px;">
+            Sidebar
+        </div>
+
+        <div style="position: fixed; bottom: 10px; right: 50px; 
+        background-color: black;color: white;">
+            Bottom_right</div>
+
+            <div style="position: absolute; top: 110px; 
+            right: 120px; background-color: red;">
+                absolute
+            </div>
+
+           
+
+    </body>
+</html>

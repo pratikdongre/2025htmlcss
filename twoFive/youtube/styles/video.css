@@ -1,13 +1,16 @@
 
+
 .thumbnail{
-    width: 300px;
-    display: block;
    
+    
+
+    width: 100%;
+   display: block;
+   height: auto;
 
    
     
     
-    border-width: 2px;
     
 }
 
@@ -18,7 +21,49 @@
     font-weight: 14px;
     line-height: 20px;    
     margin-bottom: 8px;  
-    width: 240px;      
+    width: 240px;     
+    height: 40px;
+}
+
+.onlick{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -28px;
+    display: flex;
+    background-color: rgb(2, 165, 214);
+    padding-top: 10px;
+    padding-left: 10px;
+    opacity: 0;
+}
+
+.divhidden{
+    display: inline-block;
+    position: relative;
+}
+
+.divhidden:hover .onlick{
+    opacity: 1;
+}
+
+.onlick img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+    
+}
+
+.onlick .name{
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.onlick .subs{
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 
@@ -41,12 +86,31 @@
 
 .thumbnail-row{
     margin-bottom: 10px;
+    position:relative;
+    overflow: hidden;
+    
+
+
+}
+
+.vidTime{
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: 15px;
+    bottom: 10px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 5px;
+
 }
 
 .video-author,
 .video-stats{
     color: gray;
     font-size: 12px;
+    margin: 0px;
     
 }
 
@@ -60,9 +124,29 @@
 }
 .gridofAll{
     display: grid;
-    grid-template-columns: 300px  300px 300px  ;
-    column-gap: 20px;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 10px;
     row-gap: 40px;
+    width: 100%;
     
     
+}
+
+
+@media (max-width : 1000px){
+    .gridofAll{
+        grid-template-columns:1fr 1fr ;
+    }
+}
+
+@media (min-width : 1001px ) and (max-width : 1200){
+    .gridofAll{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width : 1201px){
+    .gridofAll{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .x{
+                height: 40px;
+                width: 40px;
+                border-radius: 20px;
+                font-size: 20px;
+                background-color: black;
+                color: white;
+                border: none;
+                
+            }
+
+            .offbutton{
+                background-color: black;
+                color: white;
+                padding: 4px 4px;
+                border: none;
+                border-radius: 4px;
+                font-family: roboto;
+                
+
+
+            }
+
+            .offdiv{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+
+
+            }
+
+            .cartdiv{
+                background-color: rgb(160, 156, 156,0.45);
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                height: 100px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+              
+
+            }
+            .cartbutton{
+                position: absolute;
+                /* bottom: 35px;
+                left: 70px; */
+                padding: 8px 10px;
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                font-family: roboto;
+                font-size: 15px;
+                
+
+
+            }
+        </style>
+    </head>
+    
+    <body style="height: 3000px;">
+        <div style="position: absolute;
+                    top: 10px;
+                    right: 10px;"> 
+            <button class="x">X</button>
+
+        </div>
+
+        <div style="position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 320px;
+        height: 180px;
+        background-color: gray;">
+
+        </div>
+
+
+        <div style="position: relative; width: 236px;">
+            <img style="background-color: black;" src="clothing.jpg" alt="">
+            <div class="offdiv" ><button class="offbutton">20% OFF</button></div>
+
+            <div class="cartdiv">
+                <button class="cartbutton">Add to cart</button>
+
+            </div>
+
+
+        </div>
+    </body>
+</html>

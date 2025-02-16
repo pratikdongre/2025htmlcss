@@ -23,7 +23,7 @@
 
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="leftside"> 
                 <img style="width: 24px; margin-left: 20px; margin-right: 25px; height: 25px;" src="header-images/hamburger-menu.svg" alt="">
                 <img style="width: 90px;" src="header-images/youtube-logo.svg" alt="">
@@ -32,24 +32,35 @@
 
             <div class="middle">
                 <input class="search-bar" type="text" placeholder="Search">
-                <button class="searchlogoButton" ><img class="searchlogo" src="header-images/search.svg" alt=""></button>
-                <button class="searchvoiceButton" ><img class="searchvoice" src="header-images/voice-search-icon.svg" alt=""></button>
+                <button class="searchlogoButton" ><img class="searchlogo" src="header-images/search.svg" alt="">
+                <div class="tooltip">Search</div></button>
+                <button class="searchvoiceButton" ><img class="searchvoice" src="header-images/voice-search-icon.svg" alt="">
+                    <div class="tooltip">Search with your voice</div></button>
+                </button>
 
 
             </div>
 
 
             <div class="rightside">
-                <div class="imagediv"><img class="images" src="header-images/notifications.svg" alt=""></div>
-                <div class="imagediv"><img class="images" src="header-images/upload.svg" alt=""></div>
-                <div class="imagediv"><img  class="images" src="header-images/youtube-apps.svg" alt=""></div>
+                <div class="imagediv notification">
+                    <img class="images" src="header-images/notifications.svg" alt="">
+                    <button class="threebutton">3</button>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <div class="imagediv"><img class="images" src="header-images/upload.svg" alt="">
+                    <div class="tooltip">Upload</div>
+                </div>
+                <div class="imagediv"><img  class="images" src="header-images/youtube-apps.svg" alt="">
+                    <div class="tooltip">Youtube Apps</div>
+                </div>
                 <div class="imagedivChannel"><img class="imagesChannel" src="header-images/my-channel.jpeg" alt=""></div>
 
             </div>
-        </div>
+        </header>
 
 
-        <div class="sidebar">
+        <nav class="sidebar">
             <div class="Imagediv"> 
                 <div>              
                     <img class="imagesSidebar" src="sidebar/home.svg" alt="">
@@ -88,22 +99,25 @@
             </div>
               
 
-            </div>
+           
          
 
 
 
 
 
-        </div>
+        </nav>
 
-    <div class="gridofAll">
+    <main class="gridofAll">
 
 
-        <div class="video-preview">
+        <section class="video-preview">
 
             <div class="thumbnail-row">
-                <img class ="thumbnail" src="thumbnails/thumbnail-1.webp">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <img class ="thumbnail" src="thumbnails/thumbnail-1.webp">
+
+                </a>
 
 
             </div>
@@ -127,21 +141,36 @@
         
 
           
-        </div>
+        </section>
     
         <div class="video-preview">
 
             <div class="thumbnail-row">
-                <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+                <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+
+                </a>
+                <div class="vidTime">14:20</div>
+
 
 
             </div>
 
             <div class="gridOFbelow">
+                <div class="divhidden">  
+                        <div class="channel-picture">
+                           <img class="channel-image" src="channels/channel-2.jpeg" alt="">
+                        </div>
+                        <div class="onlick">
+                            <div><img  src="channels/channel-1.jpeg" alt=""></div>
+                            <div>
+                                <div><p class="name">Marques Brownless</p></div>
+                                <div><p class="subs">15M subscribers</p></div>
+                            </div>
+                        </div>
 
-                <div class="channel-picture">
-                    <img class="channel-image" src="channels/channel-2.jpeg" alt="">
                 </div>
+           
 
 
                 <div class="video-info" >

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button{
+                padding: 6px 8px;
+                border-radius: 4px;
+                border: none;
+                font-weight: bold;
+
+            }
+            p{
+                font-weight: bold;
+            }
+
+            .sidebarlayer1{
+                position: fixed;
+                top: 80px;
+                left: 0px;
+                bottom: 0px;
+                width: 80px; 
+                background-color: rgb(22, 22, 22);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                padding-top: 10px;
+            }
+
+            .sidebarlayer2{
+                position: fixed;
+                background-color: rgb(85, 77, 77);
+                top: 80px;
+                left: 80px;
+                width: 200px;
+                bottom: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+            }
+
+            .infoSection{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body style="height: 3000px;">
+        <div style="background-color: rgb(167, 221, 167); position: fixed; top: 0px; 
+        left: 0px; right: 0px; height: 80px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center; padding-left: 105px; padding-right: 105px;">
+        <div style="display: flex; flex-direction: row; gap: 8px;">
+            <div>
+                <img  style="width: 50px; height: 50px; border-radius: 25px;"
+                 src="cat.jpg" alt="">
+            </div>
+            <div><p>Oliver cat</p></div>
+        </div>
+        <div  style="display: flex; flex-direction: row; gap: 8px;">
+            <div><button style="background-color: rgb(0, 183, 255); color: white;">Add Friend</button></div>
+            <div><button style="background-color: rgb(255, 241, 241);">Message</button></div>
+        </div>
+
+
+            
+        </div>
+
+
+        <div style="background-color: rgb(21, 119, 206);">
+            <div class="sidebarlayer1">
+                <div><img src="cat.jpg" alt=""></div>
+                <div><img src="cat.jpg" alt=""></div>
+                <div><img src="cat.jpg" alt=""></div>
+            </div>
+            <div class="sidebarlayer2">
+                <div class="infoSection">
+                    <div><p style="font-size: 18px; color: white;">Info</p></div>
+                    <div><p style="color: white; font-size: 25px;">&#43;</p></div>
+                </div>
+                <div><p style="margin-top: 0px; color: gray;font-weight: 500;"># <span style="padding-left: 6px;"></span> new -videos</p></div>
+                <div><p style="color: gray;font-weight: 500;"># &nbsp; updates </p></div>
+                <div><p style="color: gray; font-weight: 500;"># &nbsp; faq</p></div>
+            </div>
+        </div>
+    </body>
+</html>
